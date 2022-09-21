@@ -38,7 +38,7 @@ namespace InternationalApi.Controllers
         public IActionResult GetUsingSharedResource()
         {
             // find text
-            var article = _stringLocalizer.GetString("article");
+            var article = _stringLocalizer.GetString("article").Value;
             var postName = _stringLocalizer.GetString("welcome").Value ?? string.Empty;
             var todayIs = string.Format(_sharedStringLocalizer.GetString("todayIs"),
                                 DateTime.Today.ToLongDateString()); 

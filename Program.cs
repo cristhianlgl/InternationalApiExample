@@ -17,7 +17,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // 2. Supported Cultures
-var supportedCultures = new[] { "en_US", "es_ES", "fr_FR" };
+var supportedCultures = new[] { "en-US", "es-ES", "fr-FR" };
 var localizationOptions = new RequestLocalizationOptions()
                            .SetDefaultCulture(supportedCultures[0])
                            .AddSupportedCultures(supportedCultures)
